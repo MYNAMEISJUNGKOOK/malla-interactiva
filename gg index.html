@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Interactiva - Ingeniería Civil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Malla Interactiva de Ingeniería Civil</h1>
+
+    <div class="malla">
+        <!-- Ciclo 1 -->
+        <div class="ciclo" id="ciclo1">
+            <h2>Ciclo 1</h2>
+            <div class="curso" id="c1-1" data-requisitos="[]">Comprensión y producción del lenguaje 1</div>
+            <div class="curso" id="c1-2" data-requisitos="[]">Dibujo asistido por el computador</div>
+            <div class="curso" id="c1-3" data-requisitos="[]">Introducción a la ingeniería civil</div>
+            <div class="curso" id="c1-4" data-requisitos="['c1-3']">Mate básica</div>
+            <div class="curso" id="c1-5" data-requisitos="['c1-4']">Química</div>
+        </div>
+
+        <!-- Ciclo 2 -->
+        <div class="ciclo" id="ciclo2">
+            <h2>Ciclo 2</h2>
+            <div class="curso" id="c2-1" data-requisitos="['c1-1']">Comprensión y producción del lenguaje 2</div>
+            <div class="curso" id="c2-2" data-requisitos="['c1-4']">Cálculo 1</div>
+            <div class="curso" id="c2-3" data-requisitos="['c1-1']">Seminario de investigación académica 1</div>
+            <div class="curso" id="c2-4" data-requisitos="[]">Taller de creatividad</div>
+            <div class="curso" id="c2-5" data-requisitos="['c1-2', 'c1-4']">Topografía</div>
+        </div>
+
+        <!-- Ciclo 3 -->
+        <div class="ciclo" id="ciclo3">
+            <h2>Ciclo 3</h2>
+            <div class="curso" id="c3-1" data-requisitos="['c2-2']">Cálculo 2</div>
+            <div class="curso" id="c3-2" data-requisitos="['c2-2']">Estadística</div>
+            <div class="curso" id="c3-3" data-requisitos="['c2-2', 'c1-5']">Física 1</div>
+            <div class="curso" id="c3-4" data-requisitos="['c1-3', 'c1-4', 'c1-5']">Materiales de construcción</div>
+            <div class="curso" id="c3-5" data-requisitos="[]">Ética y ciudadanía</div>
+        </div>
+
+        <!-- Resto de los ciclos seguirán el mismo patrón -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
