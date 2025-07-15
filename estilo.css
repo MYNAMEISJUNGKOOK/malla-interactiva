@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9e5e5;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #a8469c;
+}
+
+.malla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.ciclo {
+    background-color: #f9d7d7;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.curso {
+    background-color: #fdd;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #e0a6c4;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.curso:hover {
+    background-color: #f8b5d0;
+}
+
+.curso.aprobado {
+    background-color: #a6e1a6;
+    cursor: not-allowed;
+    border: 2px solid #72c472;
+}
+
+.curso.desbloqueado {
+    background-color: #f6a3d9;
+}
